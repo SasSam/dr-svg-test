@@ -1,0 +1,35 @@
+.icon-facebook {	width: 2rem;
+	height: 2rem;	background-position: -10rem 0;
+}
+
+.icon-google {	width: 2rem;
+	height: 2rem;	background-position: -7.5rem -2.5rem;
+}
+
+.icon-googleplus {	width: 2rem;
+	height: 2rem;	background-position: -5rem -5rem;
+}
+
+.icon-twitter {	width: 2rem;
+	height: 2rem;	background-position: -2.5rem -7.5rem;
+}
+
+.icon-youtube {	width: 2rem;
+	height: 2rem;	background-position: 0 -10rem;
+}
+
+.icon-facebook, .icon-google, .icon-googleplus, .icon-twitter, .icon-youtube {
+	background-size: 12.5rem 12.5rem;
+	background-repeat: no-repeat;
+	background-image: url("icon-sprite.png");}
+
+.svg .icon-facebook, .svg .icon-google, .svg .icon-googleplus, .svg .icon-twitter, .svg .icon-youtube {
+	background-image: url("icon-sprite.svg");
+}
+
+/* Duplication due to svgPath not being available earlier */
+.icon-facebook, .icon-google, .icon-googleplus, .icon-twitter, .icon-youtube {
+	.svg & {
+		background-image: url("icon-sprite.svg");
+	}	
+}
